@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.citybookshop.view.Dashboard">
+   <children>
+      <BorderPane prefHeight="733.0" prefWidth="1024.0">
+         <left>
+            <AnchorPane id="left" prefHeight="725.0" prefWidth="284.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="buttons" layoutX="17.0" layoutY="146.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="📚 View All Books" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttons" layoutX="17.0" layoutY="186.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="🔍 Search Books" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttons" layoutX="17.0" layoutY="226.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="📦 View Stock" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="43.0" layoutY="78.0" text="Menu" textFill="#9a9a9a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="122.0" layoutX="144.0" layoutY="300.0" startX="-128.0" stroke="#303263" />
+                  <Label layoutX="43.0" layoutY="312.0" text="Managers Only" textFill="#e94560">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button id="buttons" layoutX="17.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="➕ Add New Book" textFill="WHITE" />
+                  <Button id="buttons" layoutX="17.0" layoutY="419.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="🏷️ Add Category" textFill="WHITE" />
+                  <Button id="buttons" layoutX="17.0" layoutY="459.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="👤 Create Account" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane id="top" prefHeight="72.0" prefWidth="1024.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="21.0" text="    City Bookshop" textFill="#e94560">
+                     <font>
+                        <Font name="Gill Sans MT" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="909.0" layoutY="16.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Logout" />
+                  <Label layoutX="668.0" layoutY="21.0" prefHeight="31.0" prefWidth="144.0" text="Welcome Admin" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="73.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane id="center" prefHeight="658.0" prefWidth="740.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="162.0" layoutY="193.0" text="Welcome to City Bookshop" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <HBox id="Rectangles" layoutX="65.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css">
+                     <children>
+                        <Label prefHeight="73.0" prefWidth="37.0" text="24" textFill="#e94560">
+                           <font>
+                              <Font name="System Bold" size="31.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox id="Rectangles" layoutX="281.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" />
+                  <HBox id="Rectangles" layoutX="500.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
