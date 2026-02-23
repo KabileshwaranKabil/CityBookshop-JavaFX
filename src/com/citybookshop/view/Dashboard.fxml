@@ -8,23 +8,23 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.citybookshop.view.Dashboard">
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.citybookshop.controller.DashboardController">
    <children>
       <BorderPane prefHeight="733.0" prefWidth="1024.0" stylesheets="@style/Dashboard.css">
          <left>
-            <AnchorPane id="left" prefHeight="725.0" prefWidth="284.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" BorderPane.alignment="CENTER">
+            <AnchorPane id="left" prefHeight="725.0" prefWidth="284.0" stylesheets="@style/Dashboard.css" BorderPane.alignment="CENTER">
                <children>
-                  <Button id="buttons" layoutX="17.0" layoutY="146.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="📚 View All Books" textAlignment="CENTER" textFill="WHITE">
+                  <Button id="buttons" layoutX="17.0" layoutY="146.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@style/Dashboard.css" text="📚 View All Books" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans MT" size="18.0" />
                      </font>
                   </Button>
-                  <Button id="buttons" layoutX="17.0" layoutY="186.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="🔍 Search Books" textFill="WHITE">
+                  <Button id="buttons" layoutX="17.0" layoutY="186.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@style/Dashboard.css" text="🔍 Search Books" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans MT" size="18.0" />
                      </font>
                   </Button>
-                  <Button id="buttons" layoutX="17.0" layoutY="226.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="📦 View Stock" textFill="WHITE">
+                  <Button id="buttons" layoutX="17.0" layoutY="226.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@style/Dashboard.css" text="📦 View Stock" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans MT" size="18.0" />
                      </font>
@@ -40,14 +40,14 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Button id="buttons" layoutX="17.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="➕ Add New Book" textFill="WHITE" />
-                  <Button id="buttons" layoutX="17.0" layoutY="419.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="🏷️ Add Category" textFill="WHITE" />
-                  <Button id="buttons" layoutX="17.0" layoutY="459.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" text="👤 Create Account" textFill="WHITE" />
+                  <Button id="buttons" layoutX="17.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@style/Dashboard.css" text="➕ Add New Book" textFill="WHITE" />
+                  <Button id="buttons" layoutX="17.0" layoutY="419.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@style/Dashboard.css" text="🏷️ Add Category" textFill="WHITE" />
+                  <Button id="buttons" layoutX="17.0" layoutY="459.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@style/Dashboard.css" text="👤 Create Account" textFill="WHITE" />
                </children>
             </AnchorPane>
          </left>
          <top>
-            <AnchorPane id="top" prefHeight="72.0" prefWidth="1024.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" BorderPane.alignment="CENTER">
+            <AnchorPane id="top" prefHeight="72.0" prefWidth="1024.0" stylesheets="@style/Dashboard.css" BorderPane.alignment="CENTER">
                <children>
                   <Label layoutX="14.0" layoutY="21.0" text="    City Bookshop" textFill="#e94560">
                      <font>
@@ -65,14 +65,14 @@
             </AnchorPane>
          </top>
          <center>
-            <AnchorPane id="center" prefHeight="658.0" prefWidth="740.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" BorderPane.alignment="CENTER">
+            <AnchorPane id="center" prefHeight="658.0" prefWidth="740.0" stylesheets="@style/Dashboard.css" BorderPane.alignment="CENTER">
                <children>
                   <Label layoutX="162.0" layoutY="193.0" text="Welcome to City Bookshop" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans MT Bold" size="31.0" />
                      </font>
                   </Label>
-                  <HBox id="Rectangles" layoutX="65.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css">
+                  <HBox id="Rectangles" layoutX="65.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@style/Dashboard.css">
                      <children>
                         <Label prefHeight="73.0" prefWidth="37.0" text="24" textFill="#e94560">
                            <font>
@@ -81,8 +81,8 @@
                         </Label>
                      </children>
                   </HBox>
-                  <HBox id="Rectangles" layoutX="281.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" />
-                  <HBox id="Rectangles" layoutX="500.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="@../../../../../src/com/citybookshop/view/styles/Dashboard.css" />
+                  <HBox id="Rectangles" layoutX="281.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="style/Dashboard.css" />
+                  <HBox id="Rectangles" layoutX="500.0" layoutY="290.0" prefHeight="154.0" prefWidth="178.0" stylesheets="style/Dashboard.css" />
                </children>
             </AnchorPane>
          </center>

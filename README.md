@@ -131,7 +131,7 @@ All data is stored in plain text files inside the `/data` folder.
 
 ```
 USR001|admin|admin123|Manager
-USR002|john|pass123|Cashier
+USR002|kabil|pass123|Cashier
 ```
 
 **books.txt**

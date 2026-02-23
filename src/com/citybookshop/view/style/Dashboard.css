@@ -1,67 +1,57 @@
-
-	#left{
-	-fx-background-color:#16213d;
-	-fx-border-color:#303263;
-	-fx-color:#e94560
-	-fx-font-family: "Gill sans MT";
+#left {
+    -fx-background-color: #16213d;
+    -fx-border-color: #303263;
+    -fx-font-family: "Gill Sans MT";
     -fx-font-size: 18px;
-	
 }
 
-    /*#buttons{
-        -fx-background-color:#0f3460;
-        -fx-border: none;
-	    -fx-color:;
-		
-    }*/
-    #buttons {
+#buttons {
     -fx-background-color: transparent;
-    -fx-border-color: none;
-    
+    -fx-border-color: transparent;
     -fx-border-radius: 5;
     -fx-background-radius: 5;
     -fx-alignment: center-left;
     -fx-cursor: hand;
 }
-	#buttons:hover {
+
+#buttons:hover {
     -fx-background-color: #0f3460;
-    -fx-border-radius: 5px;
-    
-}
-    #top{
-	-fx-background-color:#16213d;
-	-fx-border-color:#303263;
-	-fx-color:#e94560;
+    -fx-border-radius: 5;
 }
 
-#center{
-	-fx-background-color:#191a2e;
-	-fx-border-color:#303263;
-	-fx-color:#e94560;
-    -fx-font-family: "Gill sans MT";
+#buttons:pressed {
+    -fx-background-color: #e94560;
+    -fx-border-radius: 5;
+}
+
+#top {
+    -fx-background-color: #16213d;
+    -fx-border-color: #303263;
+}
+
+#center {
+    -fx-background-color: #191a2e;
+    -fx-border-color: #303263;
+    -fx-font-family: "Gill Sans MT";
     -fx-font-size: 18px;
-	
 }
 
-#Rectangles{
+#Rectangles {
     -fx-background-color: #16213d;
     -fx-border-color: #303263;
     -fx-alignment: center;
     -fx-border-radius: 5;
     -fx-background-radius: 5;
-    -fx-font-family: "Gill sans MT";
+    -fx-font-family: "Gill Sans MT";
     -fx-font-size: 44px;
-
 }
 
-#user{
+#user {
     -fx-background-color: #381021;
     -fx-border-color: #e94560;
     -fx-alignment: center;
     -fx-border-radius: 20;
     -fx-background-radius: 20;
-    -fx-font-family: "Gill sans MT";
+    -fx-font-family: "Gill Sans MT";
     -fx-font-size: 13px;
-    -fx-color: #e94560;
-
 }

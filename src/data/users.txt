@@ -1,0 +1,3 @@
+USR001|admin|123|Manager
+USR002|kabil|1896|Cashier
+USR003|praveen|897|Manager

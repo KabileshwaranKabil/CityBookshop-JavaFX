@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -10,18 +9,18 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="600.0" maxWidth="900.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="700.0" stylesheets="@style/style-login.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:controller="com.citybookshop.controller.LoginController"  maxHeight="600.0" maxWidth="900.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="700.0" stylesheets="@style/style-login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane maxHeight="520.0" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0">
          <children>
-            <AnchorPane id="left" fx:id="left" prefHeight="560.0" prefWidth="350.0" stylesheets="@style/login.css">
+            <AnchorPane id="left" fx:id="left" prefHeight="560.0" prefWidth="350.0" stylesheets="@style/style-login.css">
                <children>
                   <Label ellipsisString="" layoutX="73.0" layoutY="218.0" text="Bookshop " textAlignment="CENTER" textFill="#ff4e6e">
                      <font>
                         <Font name="Gill Sans MT Bold" size="42.0" />
                      </font>
                   </Label>
-                  <Label layoutX="109.0" layoutY="273.0" text="Managment System" textFill="#bfbdbd">
+                  <Label layoutX="109.0" layoutY="273.0" text="Management System" textFill="#bfbdbd">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -39,15 +38,15 @@
                      </font>
                   </Label>
                </children></AnchorPane>
-            <AnchorPane id="right" layoutX="350.0" prefHeight="560.0" prefWidth="350.0" stylesheets="@style/login.css">
+            <AnchorPane id="right" layoutX="350.0" prefHeight="560.0" prefWidth="350.0" stylesheets="@style/style-login.css">
                <children>
                   <Label fx:id="Welcome" layoutX="52.0" layoutY="112.0" text="Welcome Back" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans MT Bold" size="34.0" />
                      </font>
                   </Label>
-                  <PasswordField id="password" fx:id="passwordField" layoutX="50.0" layoutY="299.0" prefHeight="50.0" prefWidth="250.0" promptText="**********" stylesheets="@styles/style-login.css" />
-                  <Button id="login" fx:id="login" layoutX="52.0" layoutY="368.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" stylesheets="@styles/style-login.css" text="Login" textFill="WHITE">
+                  <PasswordField id="password" fx:id="passwordField" layoutX="50.0" layoutY="299.0" prefHeight="50.0" prefWidth="250.0" promptText="**********" stylesheets="@style/style-login.css" />
+                  <Button id="loginButton" fx:id="loginButton" onAction="#handleLogin" layoutX="52.0" layoutY="368.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" stylesheets="@style/style-login.css" text="Login" >
                      <font>
                         <Font name="Gill Sans MT" size="25.0" />
                      </font>
@@ -55,12 +54,13 @@
                   <Label layoutX="60.0" layoutY="154.0" text="Login to your account" textFill="#bfbdbd" />
                   <Label layoutX="51.0" layoutY="202.0" text="USERNAME" textFill="#bfbdbd" />
                   <Label layoutX="50.0" layoutY="278.0" text="PASSWORD" textFill="#bfbdbd" />
-                  <TextField id="username" fx:id="usernameField" layoutX="50.0" layoutY="223.0" prefHeight="50.0" prefWidth="250.0" promptText="Enter your username" stylesheets="@style/login.css">
+                  <TextField id="username" fx:id="usernameField" layoutX="50.0" layoutY="223.0" prefHeight="50.0" prefWidth="250.0" promptText="Enter your username" stylesheets="@style/style-login.css">
                      <font>
                         <Font name="Eras Medium ITC" size="12.0" />
                      </font>
                   </TextField>
                   <Label ellipsisString="" layoutX="111.0" layoutY="453.0" text="Developed by Team 05 " textFill="#bfbdbd" />
+                  <Label id="errorLabel" fx:id="errorLabel" layoutX="68.0" layoutY="477.0" prefHeight="18.0" prefWidth="235.0" />
                </children>
             </AnchorPane>
          </children>
