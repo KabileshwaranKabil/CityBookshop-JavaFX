@@ -114,6 +114,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
+                  <Label id="messLabel" fx:id="messLabel" layoutX="200.0" layoutY="42.0" prefHeight="38.0" prefWidth="254.0" stylesheets="@style/Dashboard.css" />
                </children>
             </AnchorPane>
          </center>

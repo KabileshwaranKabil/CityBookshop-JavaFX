@@ -5,6 +5,7 @@ import com.citybookshop.model.User;
 import com.citybookshop.service.BookService;
 import com.citybookshop.service.CategoryService;
 
+import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -138,7 +140,6 @@ public class BookController {
         double finalMinPrice = minPrice;
         double finalMaxPrice = maxPrice;
 
-        // ✅ Filtering from the already-loaded books list (from text file)
         List<Book> filtered = books.stream()
                 .filter(b -> title.isEmpty() || b.getTitle().toLowerCase().contains(title.toLowerCase()))
                 .filter(b -> "All".equals(category) || b.getCategoryName().equals(category))
@@ -160,12 +161,31 @@ public class BookController {
 
     @FXML
     private void handleBack() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/citybookshop/view/Dashboard.fxml"));
-        Parent root = loader.load();
-        Stage stage = (Stage) backButton.getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/citybookshop/view/Dashboard.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) backButton.getScene().getWindow();
+            Scene scene = new Scene(root);
+
+            FadeTransition fade = new FadeTransition(Duration.millis(300), root);
+            fade.setFromValue(0.0);
+            fade.setToValue(1.0);
+            fade.play();
+
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            showError("Failed to load Dashboard. Please try again.");
+        }
+    }
+
+    private void showError(String s) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Navigation Error");
+        alert.setHeaderText(null);
+        alert.setContentText(s);
+        alert.showAndWait();
     }
 
     @FXML

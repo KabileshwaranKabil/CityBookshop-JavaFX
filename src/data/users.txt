@@ -2,4 +2,7 @@ USR001|admin|123|Manager
 USR002|kabil|1896|Manager
 USR003|praveen|897|Cashier
 USR004|dinush|623|Manager
+USR005|Dhanush|mjkd1896|Manager
+USR006|Sanjeevan|12345678|Cashier
+USR007|DinushKhan|2003dinush|Manager
 

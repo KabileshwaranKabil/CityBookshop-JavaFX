@@ -28,7 +28,7 @@ public class DashboardController implements Initializable {
     @FXML private Label totalCategoriesLabel;
     @FXML private Label stocksLabel;
     @FXML private Label welcomeLabel;
-
+    @FXML private Label messLabel;
     private User loggedInUser;
 
     public void setUser(User loggedInUser) {
@@ -55,17 +55,31 @@ public class DashboardController implements Initializable {
 
     @FXML
     private void handleAddBook() throws IOException {
-        loadView("/com/citybookshop/view/AddBook.fxml");
+        if(loggedInUser.getRole()=="Manager"){
+            loadView("/com/citybookshop/view/AddBook.fxml");
+        }else{
+            messLabel.setText(loggedInUser.getUsername()+" is a Cashier.");
+        }
+
     }
 
     @FXML
     private void handleAddCategory() throws IOException {
-        loadView("/com/citybookshop/view/AddCategory.fxml");
+        if(loggedInUser.getRole()=="Manager"){
+            loadView("/com/citybookshop/view/AddCategory.fxml");
+        }else{
+            messLabel.setText(loggedInUser.getUsername()+" is a Cashier.");
+        }
     }
 
     @FXML
     private void handleCreateAccount() throws IOException {
-        loadView("/com/citybookshop/view/CreateAccount.fxml");
+        if(loggedInUser.getRole()=="Manager"){
+            loadView("/com/citybookshop/view/CreateAccount.fxml");
+        }else{
+            messLabel.setText(loggedInUser.getUsername()+" is a Cashier.");
+        }
+
     }
 
     @FXML

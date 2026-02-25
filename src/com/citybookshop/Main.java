@@ -10,10 +10,7 @@ public class Main extends Application{
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("view/Login.fxml")
         );
-
         Scene scene = new Scene(loader.load(), 700, 560);
-
-        // Step 3 — Set up the window
         stage.setTitle("City Bookshop");
         stage.setScene(scene);
         stage.setResizable(false);

@@ -1,23 +1,12 @@
-/* ═══════════════════════════════════════════════
-   Account.css  —  City Bookshop · Create Account
-   ═══════════════════════════════════════════════ */
-
-/* ── Base ─────────────────────────────────────── */
 .anchor-pane, .border-pane {
     -fx-background-color: #0d0f1e;
 }
 
-/* ══════════════════════════════════════════════
-   CONTENT AREA
-══════════════════════════════════════════════ */
 .content-area {
     -fx-background-color: #0d0f1e;
     -fx-padding: 40 0 40 0;
 }
 
-/* ══════════════════════════════════════════════
-   PAGE HEADER
-══════════════════════════════════════════════ */
 .page-header {
     -fx-padding: 0 0 28 0;
 }
@@ -38,9 +27,6 @@
     -fx-text-fill: #5a5e7a;
 }
 
-/* ══════════════════════════════════════════════
-   FORM CARD
-══════════════════════════════════════════════ */
 .form-card {
     -fx-background-color: #1a1d35;
     -fx-background-radius: 16px;
@@ -58,9 +44,6 @@
     -fx-text-fill: #5a5e7a;
 }
 
-/* ══════════════════════════════════════════════
-   FORM FIELDS
-══════════════════════════════════════════════ */
 .field-label {
     -fx-font-family: "Gill Sans MT";
     -fx-font-size: 13px;
@@ -118,9 +101,6 @@
     -fx-background-color: #252848;
 }
 
-/* ══════════════════════════════════════════════
-   BUTTONS
-══════════════════════════════════════════════ */
 .btn-create {
     -fx-background-color: #e94560;
     -fx-text-fill: white;
@@ -158,9 +138,6 @@
     -fx-border-color: #4c7ef3;
 }
 
-/* ══════════════════════════════════════════════
-   MESSAGE LABEL
-══════════════════════════════════════════════ */
 .message-label {
     -fx-font-family: "Gill Sans MT Bold";
     -fx-font-size: 13px;

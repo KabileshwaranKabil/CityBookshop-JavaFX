@@ -13,3 +13,7 @@ BK012|Refactoring|Martin Fowler|5300|6|Software Engineering
 BK013|Rich Dad Poor Dad|Robert Kiyosaki|3000|14|Finance
 BK014|Clean Architecture|Robert C. Martin|5000|11|Programming
 BK015|Artificial Intelligence: A Modern Approach|Stuart Russell|8200|3|Artificial Intelligence
+
+BK016|Pride and Prejudice|Jane Austen|8752.0|10|Fiction
+BK017|Thirukural|Thiruvalluvar|1500.0|20|Fiction
+
